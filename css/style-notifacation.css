@@ -1,0 +1,17 @@
+.section-1{
+    .sec-1{
+        padding-top: 100px;
+        direction: rtl;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        div{
+            div{
+                display: flex;
+                svg{
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
