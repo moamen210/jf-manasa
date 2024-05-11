@@ -1,0 +1,22 @@
+.section-1{
+    .sec-1{
+        padding-top: 100px;
+        direction: rtl;
+        padding-right: 10px;
+        label{
+            
+            
+            padding-right: 20px;
+            padding-left: 100px;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        input{
+            display: none;
+        }
+    }
+}
