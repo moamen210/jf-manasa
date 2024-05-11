@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/style-subscriptions.css">
 </head>
 <body>
-    <header>
+    <?php include('./Connection/header.php') ?>  
+    <!-- <header>
         <div id="icon" class="icon">
             <img src="img/26-11-2023_15_31_54_GomhuriaOnline_3911701005514.png" alt="منصة">
         </div>
@@ -34,7 +35,7 @@
                   </svg></a></li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <section class="section-1">
         <div class="sec-1-1">
             <h2>إشتراكاتك</h2>

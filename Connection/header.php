@@ -19,8 +19,8 @@
     .icon{
         padding-left: 30px;
         img{
-            width: 180px;
-            height: 50px;
+            width: 100px;
+            height: 70px;
         }
     }
     }

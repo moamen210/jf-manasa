@@ -1,3 +1,4 @@
+<?php include('./Connection/dbConnection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,8 @@
     <link rel="stylesheet" href="css/style-admin.css">
 </head>
 <body>
+<?php include('./Connection/header.php') ?>    
+<!--
     <header>
         <div id="icon" class="icon">
             <img src="img/26-11-2023_15_31_54_GomhuriaOnline_3911701005514.png" alt="منصة">
@@ -34,7 +37,7 @@
                   </svg></a></li>
             </ul>
         </div>
-    </header>
+    </header>-->
 
     <section class="section-1">
         <div class="sec-1">

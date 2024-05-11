@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>manasa-profile</title>
+    <title>mamasa-lessons</title>
+    <link rel="stylesheet" href="css/style-lesson(s).css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="css/fixed.css">
 </head>
 <body>
-    <header>
+<?php include('./Connection/header.php') ?>  
+    <!-- <header>
         <div id="icon" class="icon">
             <img src="img/26-11-2023_15_31_54_GomhuriaOnline_3911701005514.png" alt="منصة">
         </div>
@@ -34,62 +35,45 @@
                   </svg></a></li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <section class="section-1">
-        
-            <div class="sec-1-1">
-                
-                <div class="sec-1-1-1">
-                    <ul>
-                        <li id="button-1">معلومات</li>
-                        
-                        <li id="button-2">تغيير الباسورد</li>
-                        
-                        <li id="button-3">الإشتراكات</li>
-                        
-                    </ul>
+        <br><br><br><br>
+        <center>
+            <div class="sec-1">
+                <div>
+                    <h2>
+                        <a href="">
+                            الدرس الإول : ااااااااااااا
+                        </a>
+                    </h2>
                 </div>
                 <hr>
-                <div id="sec-1-2-0" class="sec-1-2-0">
-                    <div id="sec-1-2-1" class="sec-1-2-1">
-                        <img src="img/images (1).jfif" alt="">
-                        <hr>
-                        <h3>مؤمن ربيع محمد محمد</h3>
-                        <h3>الباسورد:************</h3>
-                    </div>
-                    
-                    <div id="sec-1-2-2" class="sec-1-2-2">
-                        <form action="">
-                            <input type="password" placeholder="الباسورد الجديد">
-                            <input type="password" placeholder="إعادة الباسورد الجديد">
-                            <input type="submit" value="تغيير">
-                        </form>
-                    </div>
-                    <div id="sec-1-2-3" class="sec-1-2-3">
-                        <div>
-                            <h5 class="h5-1">علوم</h5>
-                            <h5 class="h5-2">الثاني الإعدادي</h5>
-                            <h5 class="h5-3">مفعل</h5>
-                        </div>
-                        <hr>
-                        <div>
-                            <h5 class="h5-1">عhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhلوم</h5>
-                            <h5 class="h5-2">الثاني الإعدادي</h5>
-                            <h5 class="h5-3">منتظر</h5>
-                        </div>
-                        <hr>
-                        <div>
-                            <h5 class="h5-1">علوم</h5>
-                            <h5 class="h5-2">الثاني الإعدادي</h5>
-                            <h5 class="h5-3">ملغي</h5>
-                        </div>
-                    </div>
+                <div>
+                    <h2>
+                        <a href="">
+                            الدرس الإول : ااااااااااااا
+                        </a>
+                    </h2>
                 </div>
                 <hr>
+                <div>
+                    <h2>
+                        <a href="">
+                            الدرس الإول : ااااااااااااا
+                        </a>
+                        
+                    </h2>
+                </div>
+                <hr>
+                <div>
+                    <h2>
+                        <a href="">
+                            الدرس الإول : ااااااااااااا
+                        </a>
+                    </h2>
+                </div>
             </div>
-        
-        
+        </center>
     </section>
-    <script src="js/profile.js"></script>
 </body>
 </html>
