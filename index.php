@@ -52,10 +52,13 @@
     <section class="section-1">
         
         <center>
+            <div class="sec-1">
             <div class="sec-1-1">
                 <h1>ادرس بذكاء وإتقان</h1>
-                <h2>ذاكر صح</h2>
-               
+            </div><br>
+            <div class="sec-1-1">
+            <h2>ذاكر صح</h2>
+            </div>
             </div>
         </center>
         <center>
