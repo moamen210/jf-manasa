@@ -1,9 +1,8 @@
-<?php 
-include('./Connection/dbConnection.php');
-
+<?php
+session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>manasa-login and signup</title>
 	
@@ -14,31 +13,22 @@ include('./Connection/dbConnection.php');
 </head>
 <body>
 	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
+	<input type="checkbox" id="chk" aria-hidden="true">
 			<div class="signup">
-				<form method="POST" action="./action/action-register.php">
+				<form action="./action/action-register.php" method="POST">
 					<label for="chk" aria-hidden="true">إنشاء حساب</label>
-					<input type="text" name="txt" placeholder="الاسم" required="">
-					<?php if(isset($name_error)){
-					echo $name_error;
-				} ?>
-					<input type="email" name="email" placeholder="الإيميل" required="">
-					<?php if(isset($emali_error)){
-					echo $email_error;
-				} ?>
-					<input type="password" name="pswd" placeholder="باسورد" required="">
-					<?php if(isset($pass_error)){
-					echo $pass_error;
-				} ?>
-					<input type="submit" name="submit" class="button">
+					<input type="text" name="txt" placeholder="الاسم">
+					<input type="email" name="email" placeholder="الإيميل">
+					<input type="password" name="pswd" placeholder="باسورد">
+					<input type="submit" name="submit" class="button" id="submit">
 				</form>
 			</div>
 
 			<div class="login">
-				<form>
+				<form action="./action/action-login.php" method="POST">
 					<label for="chk" aria-hidden="true">تسجيل دخول</label>
-					<input type="email" name="email" placeholder="الإيميل" required="">
-					<input type="password" name="pswd" placeholder="الباسورد" required="">
+					<input type="email" name="email" placeholder="الإيميل" value="<?php if(isset($_COOKIE['email'])) echo $_COOKIE['email'] ; ?>" required="">
+					<input type="password" name="pswd" placeholder="الباسورد" value="<?php if(isset($_COOKIE['pswd'])) echo $_COOKIE['pswd'] ; ?>" required="">
 					<input type="submit" name="submit_login" class="button">
 				</form>
 			</div>

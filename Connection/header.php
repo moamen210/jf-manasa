@@ -20,8 +20,8 @@
     .icon{
         padding-left: 30px;
         img{
-            width: 150px;
-            height: 50px;
+            width: 100px;
+            height: 60px;
         }
     }
     }

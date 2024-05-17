@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="css/style-profile.css">
 </head>
 <body>
-    <?php include('./Connection/header.php') ?>  
+    <?php include('./connection/header.php') ?>  
     <!-- <header>
         <div id="icon" class="icon">
             <img src="img/26-11-2023_15_31_54_GomhuriaOnline_3911701005514.png" alt="منصة">
@@ -37,7 +40,6 @@
         </div>
     </header> -->
     <section class="section-1">
-        
             <div class="sec-1-1">
                 
                 <div class="sec-1-1-1">
@@ -52,10 +54,27 @@
                 </div>
                 <hr>
                 <div id="sec-1-2-0" class="sec-1-2-0">
+<?php
+include('./connection/dbConnection.php');
+if(isset($_SESSION['id']) && isset($_SESSION['name'])){
+    $id = $_SESSION['id'];
+    $user = $_SESSION['name'];
+}
+$info = mysqli_query($conn,"SELECT * FROM users where name='$user'");
+while($data = mysqli_fetch_array($info)){
+
+
+
+
+?>
                     <div id="sec-1-2-1" class="sec-1-2-1">
-                        <img src="img/images (1).jfif" alt="">
+                       <?php echo "<img src='./img/img_profile/".$data['pic']."' alt='profile picture not found'>";?>
+                        <form action="./action/action-upload.php" method="POST" enctype="multipart/form-data">
+<input type="file" name="file" id="file">
+<input type="submit" name="submit" value="UPLOAD">
+</form>
                         <hr>
-                        <h3>مؤمن ربيع محمد محمد</h3>
+                        <h3>الاسم :  <?php echo $data['name'] ?></h3>
                         <h3>الباسورد:************</h3>
                     </div>
                     
@@ -89,7 +108,7 @@
                 <hr>
             </div>
         
-        
+            <?php } ?>
     </section>
     <script src="js/profile.js"></script>
 </body>
